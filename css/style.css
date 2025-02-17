@@ -1,0 +1,173 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
+.main-container {
+  width: 1028px;
+  margin: 0 auto;
+}
+/* ##############Header################ */
+.logo-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 51px;
+}
+.logotype:hover .text-top {
+  color: rgba(242, 101, 34, 1);
+}
+.logotype:hover .logo-img {
+  content: url(../img/logo_hover.png);
+  resize: none;
+}
+.logo-wrapper {
+  height: 47px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+}
+.logotype {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  gap: 8px;
+}
+.text-top {
+  color: white;
+  font-size: 29px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.text-bottom {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.data-tel:hover,
+.data-email:hover {
+  color: rgba(242, 101, 34, 1);
+  transition: all 0.3s;
+}
+.data-tel,
+.data-email {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+/* ################MAIN-CONTENT################### */
+.tour-places-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  align-items: baseline;
+  text-align: center;
+}
+.main-text {
+  color: white;
+}
+.places {
+  text-decoration: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+.footer-text {
+  margin-top: 49px;
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0px;
+}
+/* ############Hidden elements############## */
+.hidden-text:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+.hidden-text {
+  position: absolute;
+  top: 287px;
+  opacity: 0;
+  padding: 7px 16px 12px;
+  background-color: rgba(242, 101, 34, 1);
+  height: 55px;
+  width: 269px;
+  transition: all 0.3s;
+}
+.hidden-text::after {
+  display: block;
+  position: absolute;
+  border: solid 2px;
+  content: "";
+  height: 8px;
+  width: 8px;
+  transform: rotate(135deg);
+  right: 11px;
+  top: 63%;
+  border-right: none;
+  border-bottom: none;
+}
+.hidden-text.bottom {
+  top: 565px;
+}
+.hidden-text,
+.inf {
+  position: absolute;
+  color: white;
+}
+.places:hover .hidden-text {
+  opacity: 1;
+}
+.places:hover .main-text {
+  color: rgba(242, 101, 34, 1);
+}
+.text {
+  top: 16px;
+  left: 16px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.price {
+  top: 20px;
+  left: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.details {
+  right: 24px;
+  bottom: 1px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: right;
+}
+
+/* ##################HOVERS#################### */
